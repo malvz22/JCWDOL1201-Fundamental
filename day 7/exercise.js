@@ -31,6 +31,7 @@ class Transaction {
     if (product instanceof Product && qty > 0) {
       product.qty = qty;
       this.#products.push(product);
+      console.log(`In cart: ${this.#products}`);
     } else console.log("invalid product");
   }
   showTotal() {
